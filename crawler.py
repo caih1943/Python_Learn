@@ -1,4 +1,5 @@
 #提取PTT 电影版的网页原始码（HTML）
+#on github python-learn branch caih-crawler
 import urllib.request as req
 url="https://www.ptt.cc/bbs/movie/index.html"
 #建立一个 request 物件，附加 request Headers 的资讯，看起来像一个正常使用者。
