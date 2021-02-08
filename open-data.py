@@ -3,6 +3,7 @@
 # with request.urlopen(src) as response:
 #     data=response.read().decode("utf-8")
 # print(data)
+#on github python-learn branch caih-crawler
 import urllib.request as request
 import json
 #籉北市學習型機構是给json api 存取列表，网址如下：
