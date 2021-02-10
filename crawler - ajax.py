@@ -11,10 +11,11 @@ with req.urlopen(request) as response:
 #print(data)
 #解析json 原始码，取得每篇文章的标题。
 import json
-data=data.replace("])}while(1);</x>","") # 将while等前缀替换为空字窜。
+#data=data.replace("])}while(1);</x>","") # 将while等前缀替换为空字窜。
 data=json.load(data) # 把原始的json 资料解析成字典、列表表示形式。
 #取得 JSON 资料中的文章标题。
-posts=data["patload"]["reference"]["post"]
+#posts=data["patload"]["reference"]["post"]
+post=data["webRankedModules"]["modules"]["metadata"]["post"]
 for key in posts:
     post=posts[key]
     print(post["title"])
